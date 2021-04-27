@@ -1,0 +1,6 @@
+#!/usr/bin/make -f
+%:
+	dh $@
+
+override_dh_auto_install:
+	$(MAKE) DESTDIR=$$(pwd)/debian/produttore_e_consumatore2 prefix=/usr install
