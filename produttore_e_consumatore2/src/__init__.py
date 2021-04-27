@@ -8,58 +8,65 @@ from tabular_log import tabular_log
 from json import loads, dumps
 import requests
 from programGUI import programGUI
+from threading import Thread, Lock, active_count
+from time import sleep
+from random import random
 
 __author__ = "help@castellanidavide.it"
-__version__ = "01.01 2021-4-27"
+__version__ = "01.01 2021-04-27"
 
 
 class produttore_e_consumatore2:
     def __init__(self,
                  verbose=False,
                  csv=False,
+                 choise="single",
                  dbenable=False,
                  dburl=None,
                  dbtoken=None,
-                 dbOStable=None,
-                 dbNETtable=None):
+                 dbtable=None):
         """Where it all begins
         """
-        self.setup(verbose, csv, dbenable, dburl, dbtoken,
-                   dbOStable, dbNETtable)  # Setup all the requirements
+        self.setup(verbose, csv, choise, dbenable, dburl,
+                   dbtoken, dbtable)  # Setup all the requirements
 
+        self.core()  # Try to run the core
         try:
-            self.core()  # Try to run the core
+            pass
         except BaseException:
-            print("Error: make sure you have installed vbox on your PC")
+            print("Error :(")
 
-    def setup(
-        self, verbose, csv, dbenable, dburl, dbtoken, dbOStable,
-            dbNETtable):
+        self.end()
+
+    def setup(self, verbose, csv, choise, dbenable, dburl, dbtoken, dbtable):
         """Setup
         """
         # Define main variabiles
         self.verbose = verbose
         self.csv = csv
+        self.choise = choise
         self.dbenable = dbenable
         self.dburl = dburl
         self.dbtoken = dbtoken
-        self.dbOStable = dbOStable
-        self.dbNETtable = dbNETtable
+        self.dbtable = dbtable
+        self.list_len = 10
+        self.locks = [Lock()] * self.list_len
+        self.values = [None] * self.list_len
 
         # Define log
         try:
             self.log = tabular_log(
                 "C:/Program Files/produttore_e_consumatore2/trace.log"
-                if os.name == 'nt' else "~/trace.log", title="produttore_e_consumatore2",
-                verbose=self.verbose)
+                if os.name == 'nt' else "~/trace.log",
+                title="produttore_e_consumatore2", verbose=self.verbose)
         except BaseException:
             self.log = tabular_log(
-                "trace.log", title="produttore_e_consumatore2", verbose=self.verbose)
+                "trace.log", title="produttore_e_consumatore2",
+                verbose=self.verbose)
         self.log.print("Created log")
 
         # Headers
-        self.OSheader = "PC_name,OS"
-        self.net_header = "PC_name,network_card_name,IPv4,MAC,Attachment"
+        self.multiprocessing_header = "CP,msg"
         self.log.print("Headers inizialized")
 
         # Inizialize DB
@@ -79,8 +86,8 @@ class produttore_e_consumatore2:
             except BaseException:
                 self.log.print(f"Failed to create dev schema")
 
-            for table, params in zip([self.dbOStable, self.dbNETtable],
-                                     [self.OSheader, self.net_header]):
+            for table, params in zip([self.dbtable],
+                                     [self.multiprocessing_header]):
                 try:
                     response = requests.request(
                         "POST", f"{self.dburl}",
@@ -121,36 +128,107 @@ class produttore_e_consumatore2:
         # If selected setup csv
         if self.csv:
             # Define files
-            self.OS = "OS.csv"
-            self.net = "net.csv"
+            self.multiprocessing = "multiprocessing.csv"
             self.log.print("Defined CSV files' infos")
 
             # Create header if needed
             try:
-                if open(self.OS, 'r+').readline() == "":
+                if open(self.multiprocessing, 'r+').readline() == "":
                     assert(False)
             except BaseException:
-                open(self.OS, 'w+').write(self.OSheader + "\n")
-
-            try:
-                if open(self.net, 'r+').readline() == "":
-                    assert(False)
-            except BaseException:
-                open(self.net, 'w+').write(self.net_header + "\n")
+                open(self.multiprocessing,
+                     'w+').write(self.multiprocessing_header + "\n")
 
             self.log.print("Inizialized CSV files")
 
     def core(self):
         """Core of all project
         """
+        self.threads = []
+
+        if self.choise == "singular":
+            self.threads.append(
+                Thread(
+                    target=self.produttore,
+                    args=(0, "singular")))
+            self.threads.append(Thread(target=self.consumatore, args=(0,)))
+        elif self.choise == "linear":
+            for i in range(len(self.values)):
+                self.threads.append(
+                    Thread(
+                        target=self.produttore,
+                        args=(i, f"linear #{i}")))
+                self.threads.append(
+                    Thread(
+                        target=self.consumatore,
+                        args=(i,)))
+        elif self.choise == "circular":
+            for i in range(5 * len(self.values)):
+                self.threads.append(
+                    Thread(
+                        target=self.produttore,
+                        args=(i % len(self.values),
+                              f"circular #{i}")))
+                self.threads.append(
+                    Thread(
+                        target=self.consumatore,
+                        args=(i % len(self.values),)))
+
+        self.log.print("Setuped threads")
+
+        for thread in self.threads:
+            thread.start()
+
+        self.log.print("Started threads")
+
+        while active_count() != 1:
+            pass
+
+        self.log.print("Finished threads")
+
+    def produttore(self, index, value):
+        """productor
+        """
+        sleep(random() / 10)
+
+        try:
+            with self.locks[index]:
+                assert(self.values[index] == None)
+                self.values[index] = value
+                self.write("productor", "{index: " + str(index) + ", value: " + str(value) + "}")
+        except:
+            Thread(target=self.produttore, args=(index, value)).start()
+
+    def consumatore(self, index):
+        """consumer
+        """
+        sleep(random() / 10)
+
+        try:
+            with self.locks[index]:
+                assert(self.values[index] != None)
+                self.write("consumer", "{index: " + str(index) + ", value: " + str(self.values[index]) + "}")
+                self.values[index] = None  # Reset value
+        except:
+            Thread(target=self.consumatore, args=(index,)).start()
+
+    def write(self, consumer_productor, message):
+        """Write everywhere 
+        """
+        self.log.print(f"{consumer_productor}: {message}")
+
+        msg = {
+            "CP": consumer_productor,
+            "msg": message
+        }
+
         try:
             # If CSV enabled write into csv file
             if self.csv:
                 DictWriter(
-                    open(self., 'a+', newline=''),
-                    fieldnames=self.OSheader.split(","),
-                    restval='').writerow({
-                    })
+                    open(self.multiprocessing, 'a+', newline=''),
+                    fieldnames=self.multiprocessing_header.split(","),
+                    restval='').writerow(msg)
 
             # If DB enabled try to insert infos
             if self.dbenable:
@@ -164,43 +242,26 @@ class produttore_e_consumatore2:
                         data=dumps({
                             "operation": "insert",
                             "schema": "dev",
-                            "table": self.dbOStable,
-                            "records": [
-                                {
-
-                                }
-                            ]
+                            "table": self.dbtable,
+                            "records": [msg]
                         })
                     )
                     self.log.print(f"By DB: {response.text}")
                 except BaseException:
                     self.log.print(f"Failed the DB insert")
         except BaseException:
-            self.log.print(f"Error taking {PC} ...")
+            self.log.print(f"Error writing...")
 
-    def get_output(self, array):
-        """ Gets the output by the shell
+    def end(self):
+        """End logo
         """
-        if os.name == 'nt':  # If OS == Windows
-            cmd = self.vboxmanage
-            for i in array:
-                if " " in i:
-                    i = "'" + i + "'"
-                cmd += " " + i
+        self.log.print("End")
 
-            return produttore_e_consumatore2.remove_b(subprocess.check_output(cmd, shell=False))
-        else:
-            return produttore_e_consumatore2.remove_b(
-                subprocess.Popen(
-                    [self.vboxmanage] + array,
-                    stdout=subprocess.PIPE,
-                    stderr=subprocess.PIPE
-                ).communicate()[0])
-
-    def remove_b(string):
-        """Removes b'' by string
-        """
-        return str(string).replace("b'", "")[:-1:]
+        print()
+        print("I hope this tool help you.")
+        print("If you want see the project you can find it: https://github.com/CastellaniDavide/produttore_e_consumatore2")
+        print()
+        print("Made w/ ❤️ by Castellani Davide")
 
 
 def laucher():
@@ -214,26 +275,27 @@ def laucher():
     elif "--batch" in argv or "-b" in argv:
         debug = "--debug" in argv or "-d" in argv
         csv = "--csv" in argv
-        dbenable = dburl = dbtoken = dbOStable = dbNETtable = None
+        dbenable = dburl = dbtoken = dbtable = None
+        choise = "singular"
 
         for arg in argv:
             if "--url=" in arg:
                 dburl = arg.replace("--url=", "")
             if "--token=" in arg:
                 dbtoken = arg.replace("--token=", "")
-            if "--OStable=" in arg:
-                dbOStable = arg.replace("--OStable=", "")
-            if "--NETtable=" in arg:
-                dbNETtable = arg.replace("--NETtable=", "")
+            if "--table=" in arg:
+                dbtable = arg.replace("--table=", "")
+            if "--choise=" in arg:
+                choise = arg.replace("--choise=", "")
 
         # Launch the principal part of the code
         if dburl is not None and \
            dbtoken is not None and \
-           dbOStable is not None and \
-           dbNETtable is not None:
-            produttore_e_consumatore2(debug, csv, True, dburl, dbtoken, dbOStable, dbNETtable)
+           dbtable is not None:
+            produttore_e_consumatore2(
+                debug, csv, choise, True, dburl, dbtoken, dbtable)
         else:
-            produttore_e_consumatore2(debug, csv)
+            produttore_e_consumatore2(debug, csv, choise)
     else:
         gui = programGUI(title="produttore_e_consumatore2", instructions=[
             [
@@ -246,6 +308,16 @@ def laucher():
                     "type": "bool",
                     "title": "Want you have a csv output?",
                     "id": "csv"
+                },
+                {
+                    "type": "list",
+                    "title": "Choose your opinion",
+                    "id": "choise",
+                    "options": [
+                            "singular",
+                            "linear",
+                            "circular"
+                    ]
                 }
             ],
             [
@@ -261,34 +333,27 @@ def laucher():
                 },
                 {
                     "type": "text",
-                    "title": "Insert OS table name:",
-                    "id": "OStable"
-                },
-                {
-                    "type": "text",
-                    "title": "Insert NET table name:",
-                    "id": "NETtable"
+                    "title": "Insert table name:",
+                    "id": "table"
                 }
             ]
         ])
 
-        if gui.get_values()["url"] is not None and \
-                gui.get_values()["token"] is not None and \
-                gui.get_values()["OStable"] is not None and \
-                gui.get_values()["NETtable"] is not None:
+        if gui.get_values()["url"] != "" and gui.get_values()["token"] != "" and gui.get_values()["table"] != "":
             produttore_e_consumatore2(
                 gui.get_values()["verbose"],
                 gui.get_values()["csv"],
+                gui.get_values()["choise"],
                 True,
                 gui.get_values()["url"],
                 gui.get_values()["token"],
-                gui.get_values()["OStable"],
-                gui.get_values()["NETtable"]
+                gui.get_values()["table"]
             )
         else:
             produttore_e_consumatore2(
                 gui.get_values()["verbose"],
-                gui.get_values()["csv"]
+                gui.get_values()["csv"],
+                gui.get_values()["choise"]
             )
 
 
