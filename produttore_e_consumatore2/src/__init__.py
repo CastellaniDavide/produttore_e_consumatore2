@@ -193,10 +193,12 @@ class produttore_e_consumatore2:
 
         try:
             with self.locks[index]:
-                assert(self.values[index] == None)
+                assert(self.values[index] is None)
                 self.values[index] = value
-                self.write("productor", "{index: " + str(index) + ", value: " + str(value) + "}")
-        except:
+                self.write(
+                    "productor", "{index: " + str(index) + ", value: " +
+                    str(value) + "}")
+        except BaseException:
             Thread(target=self.produttore, args=(index, value)).start()
 
     def consumatore(self, index):
@@ -206,14 +208,16 @@ class produttore_e_consumatore2:
 
         try:
             with self.locks[index]:
-                assert(self.values[index] != None)
-                self.write("consumer", "{index: " + str(index) + ", value: " + str(self.values[index]) + "}")
+                assert(self.values[index] is not None)
+                self.write(
+                    "consumer", "{index: " + str(index) + ", value: " +
+                    str(self.values[index]) + "}")
                 self.values[index] = None  # Reset value
-        except:
+        except BaseException:
             Thread(target=self.consumatore, args=(index,)).start()
 
     def write(self, consumer_productor, message):
-        """Write everywhere 
+        """Write everywhere
         """
         self.log.print(f"{consumer_productor}: {message}")
 
@@ -259,7 +263,8 @@ class produttore_e_consumatore2:
 
         print()
         print("I hope this tool help you.")
-        print("If you want see the project you can find it: https://github.com/CastellaniDavide/produttore_e_consumatore2")
+        print("If you want see the project you can find it: "
+              "https://github.com/CastellaniDavide/produttore_e_consumatore2")
         print()
         print("Made w/ ❤️ by Castellani Davide")
 
@@ -339,7 +344,8 @@ def laucher():
             ]
         ])
 
-        if gui.get_values()["url"] != "" and gui.get_values()["token"] != "" and gui.get_values()["table"] != "":
+        if gui.get_values()["url"] != "" and gui.get_values()[
+                "token"] != "" and gui.get_values()["table"] != "":
             produttore_e_consumatore2(
                 gui.get_values()["verbose"],
                 gui.get_values()["csv"],
