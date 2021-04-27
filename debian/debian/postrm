@@ -1,0 +1,2 @@
+#!/bin/bash
+pip uninstall produttore_e_consumatore2
