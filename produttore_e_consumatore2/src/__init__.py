@@ -8,12 +8,15 @@ from tabular_log import tabular_log
 from json import loads, dumps
 import requests
 from programGUI import programGUI
-from threading import Thread, Lock, active_count
 from time import sleep
 from random import random
+from multiprocessing import Process, Lock, Manager
+from psutil import Process as Pprocess
+from threading import Thread, active_count
+from ctypes import c_char_p, c_int
 
 __author__ = "help@castellanidavide.it"
-__version__ = "01.01 2021-04-27"
+__version__ = "01.01 2021-04-28"
 
 
 class produttore_e_consumatore2:
@@ -51,7 +54,10 @@ class produttore_e_consumatore2:
         self.dbtable = dbtable
         self.list_len = 10
         self.locks = [Lock()] * self.list_len
-        self.values = [None] * self.list_len
+        self.values = []
+        for _ in range(self.list_len):
+            self.values.append(Manager().Value(c_char_p, None))
+        self.pLeft = Manager().Value(c_int, 0)
 
         # Define log
         try:
@@ -144,47 +150,54 @@ class produttore_e_consumatore2:
     def core(self):
         """Core of all project
         """
-        self.threads = []
+        processes = []
 
         if self.choise == "singular":
-            self.threads.append(
-                Thread(
+            processes.append(
+                Process(
                     target=self.produttore,
-                    args=(0, "singular")))
-            self.threads.append(Thread(target=self.consumatore, args=(0,)))
+                    args=(
+                        0,
+                        "singular")))
+            processes.append(Process(target=self.consumatore, args=(0,)))
+            self.pLeft.value = 1 * 2
         elif self.choise == "linear":
             for i in range(len(self.values)):
-                self.threads.append(
-                    Thread(
+                processes.append(
+                    Process(
                         target=self.produttore,
                         args=(i, f"linear #{i}")))
-                self.threads.append(
-                    Thread(
+                processes.append(
+                    Process(
                         target=self.consumatore,
                         args=(i,)))
+            self.pLeft.value = len(self.values) * 2
         elif self.choise == "circular":
             for i in range(5 * len(self.values)):
-                self.threads.append(
-                    Thread(
+                processes.append(
+                    Process(
                         target=self.produttore,
                         args=(i % len(self.values),
                               f"circular #{i}")))
-                self.threads.append(
-                    Thread(
+                processes.append(
+                    Process(
                         target=self.consumatore,
                         args=(i % len(self.values),)))
+            self.pLeft.value = 5 * len(self.values) * 2
 
-        self.log.print("Setuped threads")
+        self.log.print("Setuped processes")
 
-        for thread in self.threads:
-            thread.start()
+        for process in processes:
+            process.start()
 
-        self.log.print("Started threads")
+        self.log.print("Started processes")
 
-        while active_count() != 1:
+        while self.pLeft.value != 0 or active_count() != 1:
             pass
 
-        self.log.print("Finished threads")
+        sleep(1)  # Wait a while for the DB/ csv print(s)
+
+        self.log.print("Finished processes")
 
     def produttore(self, index, value):
         """productor
@@ -193,13 +206,20 @@ class produttore_e_consumatore2:
 
         try:
             with self.locks[index]:
-                assert(self.values[index] is None)
-                self.values[index] = value
-                self.write(
-                    "productor", "{index: " + str(index) + ", value: " +
-                    str(value) + "}")
+                assert(self.values[index].value is None)
+                self.values[index].value = value
+                Thread(
+                    target=self.write,
+                    args=(
+                        "productor",
+                        "{index: " +
+                        str(index) +
+                        ", value: " +
+                        str(value) +
+                        "}")).start()
+                self.pLeft.value -= 1
         except BaseException:
-            Thread(target=self.produttore, args=(index, value)).start()
+            Process(target=self.produttore, args=(index, value)).start()
 
     def consumatore(self, index):
         """consumer
@@ -208,13 +228,15 @@ class produttore_e_consumatore2:
 
         try:
             with self.locks[index]:
-                assert(self.values[index] is not None)
-                self.write(
-                    "consumer", "{index: " + str(index) + ", value: " +
-                    str(self.values[index]) + "}")
-                self.values[index] = None  # Reset value
+                assert(self.values[index].value is not None)
+                Thread(
+                    target=self.write,
+                    args=("consumer", "{index: " + str(index) + ", value: " +
+                          str(self.values[index].value) + "}")).start()
+                self.values[index].value = None  # Reset value
+                self.pLeft.value -= 1
         except BaseException:
-            Thread(target=self.consumatore, args=(index,)).start()
+            Process(target=self.consumatore, args=(index,)).start()
 
     def write(self, consumer_productor, message):
         """Write everywhere

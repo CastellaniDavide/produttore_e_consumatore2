@@ -2,12 +2,11 @@
 [![GitHub license](https://img.shields.io/badge/license-Apache%202.0%20License-green?style=flat)](https://github.com/CastellaniDavide/cpp-produttore_e_consumatore2/blob/master/LICENSE) ![Author](https://img.shields.io/badge/author-Castellani%20Davide-green?style=flat) ![Version](https://img.shields.io/badge/version-v01.01-blue?style=flat) ![Language Python](https://img.shields.io/badge/language-Python-yellowgreen?style=flat) ![sys.platform supported](https://img.shields.io/badge/OS%20platform%20supported-All-blue?style=flat) [![On GitHub](https://img.shields.io/badge/on%20GitHub-True-green?style=flat&logo=github)](https://github.com/CastellaniDavide/produttore_e_consumatore2) 
 
 ## Description
-Multiprocessing
+Producer and consumer with multiprocessing
 
 ## Required
 ![](http://jeffnielsen.com/wp-content/uploads/2014/06/required-cropped.png)
  - choco/ apt
- - virtualbox (C:\Work\* if you are on windows)
 
 ## Installation
 ![](https://dctacademy.com/wp-content/uploads/2016/12/install.jpeg)
@@ -43,7 +42,6 @@ Multiprocessing
      - on-push.yml
      - on-release.yml
  - choco
-   - ReadMe.md
    - set.txt
    - produttore_e_consumatore2.nuspec
    - tools
@@ -51,12 +49,6 @@ Multiprocessing
      - chocolateyuninstall.ps1
      - LICENSE.txt
      - VERIFICATION.txt
-     - produttore_e_consumatore2-install.c
-     - produttore_e_consumatore2-install.exe
-     - produttore_e_consumatore2-install.o
-     - produttore_e_consumatore2.c
-     - produttore_e_consumatore2.exe
-     - produttore_e_consumatore2.o
  - debian
    - produttore_e_consumatore2.1
    - produttore_e_consumatore2.c
@@ -96,13 +88,6 @@ Multiprocessing
    - C:/Program Files/produttore_e_consumatore2/* on Windows
    - ~/* on linux
    - current location (if you didn't lauch the code with the correct rights)
-
-# Changelog
-![](https://www.ashoka.org/sites/default/files/styles/medium_1600x1000/public/old_way_new_way.jpg?itok=3JnbJz4O)
- - [Version_01.01_2021-4-27](#Version_0101_2021-4-27)
-
-## Version_01.01_2021-4-27
- - Initial version
 
 ---
 Made by Castellani Davide 
