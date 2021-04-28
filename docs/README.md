@@ -13,7 +13,7 @@ Producer and consumer with multiprocessing
  - choco (Windows) (as Administartor)
    - ```choco install produttore_e_consumatore2 --version=01.01```
  - Ubuntu using apt:
-    - ```sudo add-apt-repository ppa:castellanidavide/school -y; sudo apt update; sudo apt install produttore_e_consumatore2 -y```
+    - ```sudo add-apt-repository ppa:castellanidavide/school -y; sudo apt update; sudo apt install produttoreconsumatore2 -y```
 
 ### Update
 ![](https://images.idgesg.net/images/article/2020/07/software_update_by_gocmen_gettyimages-1146311500_2400x1600-100852481-large.jpg)
@@ -27,7 +27,7 @@ Producer and consumer with multiprocessing
   - Windows (using choco):
     - ```choco remove produttore_e_consumatore2```
   - Ubuntu using apt:
-    - ```sudo apt remove produttore_e_consumatore2```
+    - ```sudo apt remove produttoreconsumatore2```
 
 ## Directories structure
 ![](https://cdn.analyticsvidhya.com/wp-content/uploads/2019/05/data-science-framework.png)
@@ -50,8 +50,8 @@ Producer and consumer with multiprocessing
      - LICENSE.txt
      - VERIFICATION.txt
  - debian
-   - produttore_e_consumatore2.1
-   - produttore_e_consumatore2.c
+   - produttoreconsumatore2.1
+   - produttoreconsumatore2.c
    - Makefile
    - requirements.in
    - debian
