@@ -54,9 +54,9 @@ jobs:
       run: |
         echo "::set-output name=PUSH_PATH::$(curl -u "DavideC03:${{ secrets.GITHUB_TOKEN }}" -sL https://api.github.com/repos/CastellaniDavide/produttore_e_consumatore2/releases/latest | jq -r '.upload_url')" 
         echo "::set-output name=VERSION_TAG::$(echo ${{ steps.latest.outputs.tag }} | sed 's/v//')"
-        echo "::set-output name=TAR_FILE::produttore_e_consumatore2_$(echo ${{ steps.latest.outputs.tag }} | sed 's/v//').orig.tar.gz"
-        echo "::set-output name=DEB_FILE::produttore_e_consumatore2_$(echo ${{ steps.latest.outputs.tag }} | sed 's/v//')_amd64.deb"
-        echo "::set-output name=CHANGES_FILE::produttore_e_consumatore2_$(echo ${{ steps.latest.outputs.tag }} | sed 's/v//')_source.changes"
+        echo "::set-output name=TAR_FILE::produttoreconsumatore2_$(echo ${{ steps.latest.outputs.tag }} | sed 's/v//').orig.tar.gz"
+        echo "::set-output name=DEB_FILE::produttoreconsumatore2_$(echo ${{ steps.latest.outputs.tag }} | sed 's/v//')_amd64.deb"
+        echo "::set-output name=CHANGES_FILE::produttoreconsumatore2_$(echo ${{ steps.latest.outputs.tag }} | sed 's/v//')_source.changes"
         echo "::set-output name=NUPKG_FILE::produttore_e_consumatore2.$(echo ${{ steps.latest.outputs.tag }} | sed 's/v//').nupkg"
         echo "::set-output name=NUPKG_FILE_PATH::./choco/produttore_e_consumatore2_$(echo ${{ steps.latest.outputs.tag }} | sed 's/v//').nupkg"
       id: envirorment-variables
@@ -94,9 +94,9 @@ jobs:
       run: |
         echo "::set-output name=PUSH_PATH::$(curl -u "DavideC03:${{ secrets.GITHUB_TOKEN }}" -sL https://api.github.com/repos/CastellaniDavide/produttore_e_consumatore2/releases/latest | jq -r '.upload_url')" 
         echo "::set-output name=VERSION_TAG::$(echo ${{ steps.latest.outputs.tag }} | sed 's/v//')"
-        echo "::set-output name=TAR_FILE::produttore_e_consumatore2_$(echo ${{ steps.latest.outputs.tag }} | sed 's/v//').orig.tar.gz"
-        echo "::set-output name=DEB_FILE::produttore_e_consumatore2_$(echo ${{ steps.latest.outputs.tag }} | sed 's/v//')_amd64.deb"
-        echo "::set-output name=CHANGES_FILE::produttore_e_consumatore2_$(echo ${{ steps.latest.outputs.tag }} | sed 's/v//')_source.changes"
+        echo "::set-output name=TAR_FILE::produttoreconsumatore2_$(echo ${{ steps.latest.outputs.tag }} | sed 's/v//').orig.tar.gz"
+        echo "::set-output name=DEB_FILE::produttoreconsumatore2_$(echo ${{ steps.latest.outputs.tag }} | sed 's/v//')_amd64.deb"
+        echo "::set-output name=CHANGES_FILE::produttoreconsumatore2_$(echo ${{ steps.latest.outputs.tag }} | sed 's/v//')_source.changes"
         echo "::set-output name=NUPKG_FILE::produttore_e_consumatore2.$(echo ${{ steps.latest.outputs.tag }} | sed 's/v//').nupkg"
         echo "::set-output name=NUPKG_FILE_PATH::./choco/produttore_e_consumatore2_$(echo ${{ steps.latest.outputs.tag }} | sed 's/v//').nupkg"
       id: envirorment-variables
@@ -181,9 +181,9 @@ jobs:
       run: |
         echo "::set-output name=PUSH_PATH::$(curl -u "DavideC03:${{ secrets.GITHUB_TOKEN }}" -sL https://api.github.com/repos/CastellaniDavide/produttore_e_consumatore2/releases/latest | jq -r '.upload_url')" 
         echo "::set-output name=VERSION_TAG::$(echo ${{ steps.latest.outputs.tag }} | sed 's/v//')"
-        echo "::set-output name=TAR_FILE::produttore_e_consumatore2_$(echo ${{ steps.latest.outputs.tag }} | sed 's/v//').orig.tar.gz"
-        echo "::set-output name=DEB_FILE::produttore_e_consumatore2_$(echo ${{ steps.latest.outputs.tag }} | sed 's/v//')_amd64.deb"
-        echo "::set-output name=CHANGES_FILE::produttore_e_consumatore2_$(echo ${{ steps.latest.outputs.tag }} | sed 's/v//')_source.changes"
+        echo "::set-output name=TAR_FILE::produttoreconsumatore2_$(echo ${{ steps.latest.outputs.tag }} | sed 's/v//').orig.tar.gz"
+        echo "::set-output name=DEB_FILE::produttoreconsumatore2_$(echo ${{ steps.latest.outputs.tag }} | sed 's/v//')_amd64.deb"
+        echo "::set-output name=CHANGES_FILE::produttoreconsumatore2_$(echo ${{ steps.latest.outputs.tag }} | sed 's/v//')_source.changes"
         echo "::set-output name=NUPKG_FILE::produttore_e_consumatore2.$(echo ${{ steps.latest.outputs.tag }} | sed 's/v//').nupkg"
         echo "::set-output name=NUPKG_FILE_PATH::./choco/produttore_e_consumatore2_$(echo ${{ steps.latest.outputs.tag }} | sed 's/v//').nupkg"
       id: envirorment-variables
