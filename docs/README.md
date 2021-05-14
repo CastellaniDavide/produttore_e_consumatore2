@@ -32,7 +32,7 @@ You can use this tool to get the files which are in a selected folder/ subfolder
 
 ## Usage
  - with GUI
-   - ![](https://raw.githubusercontent.com/CastellaniDavide/produttore_e_consumatore2/docs/GUI.png) Follow the labels (only folder one is obbligatory).
+   - ![](https://raw.githubusercontent.com/CastellaniDavide/produttore_e_consumatore2/main/docs/GUI.png) Follow the labels (only folder one is obbligatory).
  - without GUI
    - produttore_e_consumatore2 [--batch | -b] - disable GUI mode
    - produttore_e_consumatore2 [--verbose] - verbose mode (if not in GUI mode)
