@@ -16,21 +16,21 @@ from threading import Thread, active_count
 from ctypes import c_char_p, c_int
 
 __author__ = "help@castellanidavide.it"
-__version__ = "01.01 2021-04-28"
+__version__ = "02.01 2021-05-14"
 
 
 class produttore_e_consumatore2:
     def __init__(self,
                  verbose=False,
                  csv=False,
-                 choise="single",
+                 folder="single",
                  dbenable=False,
                  dburl=None,
                  dbtoken=None,
                  dbtable=None):
         """Where it all begins
         """
-        self.setup(verbose, csv, choise, dbenable, dburl,
+        self.setup(verbose, csv, folder, dbenable, dburl,
                    dbtoken, dbtable)  # Setup all the requirements
 
         self.core()  # Try to run the core
@@ -41,22 +41,18 @@ class produttore_e_consumatore2:
 
         self.end()
 
-    def setup(self, verbose, csv, choise, dbenable, dburl, dbtoken, dbtable):
+    def setup(self, verbose, csv, folder, dbenable, dburl, dbtoken, dbtable):
         """Setup
         """
         # Define main variabiles
         self.verbose = verbose
         self.csv = csv
-        self.choise = choise
+        self.folder = folder
         self.dbenable = dbenable
         self.dburl = dburl
         self.dbtoken = dbtoken
         self.dbtable = dbtable
-        self.list_len = 10
-        self.locks = [Lock()] * self.list_len
-        self.values = []
-        for _ in range(self.list_len):
-            self.values.append(Manager().Value(c_char_p, None))
+        self.list_len = 0
         self.pLeft = Manager().Value(c_int, 0)
 
         # Define log
@@ -151,39 +147,26 @@ class produttore_e_consumatore2:
         """Core of all project
         """
         processes = []
+         
+        for path, subdirs, files in os.walk(self.folder):
+            for name in files:
+                processes.append(
+                    Process(
+                        target=self.produttore,
+                        args=(
+                            self.pLeft.value,
+                            os.path.join(path, name))))
+                processes.append(Process(target=self.consumatore, args=(self.pLeft.value,)))
+                self.pLeft.value += 1
 
-        if self.choise == "singular":
-            processes.append(
-                Process(
-                    target=self.produttore,
-                    args=(
-                        0,
-                        "singular")))
-            processes.append(Process(target=self.consumatore, args=(0,)))
-            self.pLeft.value = 1 * 2
-        elif self.choise == "linear":
-            for i in range(len(self.values)):
-                processes.append(
-                    Process(
-                        target=self.produttore,
-                        args=(i, f"linear #{i}")))
-                processes.append(
-                    Process(
-                        target=self.consumatore,
-                        args=(i,)))
-            self.pLeft.value = len(self.values) * 2
-        elif self.choise == "circular":
-            for i in range(5 * len(self.values)):
-                processes.append(
-                    Process(
-                        target=self.produttore,
-                        args=(i % len(self.values),
-                              f"circular #{i}")))
-                processes.append(
-                    Process(
-                        target=self.consumatore,
-                        args=(i % len(self.values),)))
-            self.pLeft.value = 5 * len(self.values) * 2
+        # set list
+        self.list_len = self.pLeft.value
+        self.locks = [Lock()] * self.list_len
+        self.values = []
+        self.pLeft.value *= 2
+
+        for _ in range(self.list_len):
+            self.values.append(Manager().Value(c_char_p, None))
 
         self.log.print("Setuped processes")
 
@@ -192,7 +175,7 @@ class produttore_e_consumatore2:
 
         self.log.print("Started processes")
 
-        while self.pLeft.value != 0 or active_count() != 1:
+        while self.pLeft.value != 0 and active_count() != 1:
             pass
 
         sleep(1)  # Wait a while for the DB/ csv print(s)
@@ -202,7 +185,6 @@ class produttore_e_consumatore2:
     def produttore(self, index, value):
         """productor
         """
-        sleep(random() / 10)
 
         try:
             with self.locks[index]:
@@ -278,6 +260,10 @@ class produttore_e_consumatore2:
         except BaseException:
             self.log.print(f"Error writing...")
 
+        if consumer_productor == "consumer":
+            with open("dir.txt", "a+") as f:
+                f.write(message + "\n")
+
     def end(self):
         """End logo
         """
@@ -303,7 +289,7 @@ def laucher():
         debug = "--debug" in argv or "-d" in argv
         csv = "--csv" in argv
         dbenable = dburl = dbtoken = dbtable = None
-        choise = "singular"
+        folder = "singular"
 
         for arg in argv:
             if "--url=" in arg:
@@ -312,17 +298,17 @@ def laucher():
                 dbtoken = arg.replace("--token=", "")
             if "--table=" in arg:
                 dbtable = arg.replace("--table=", "")
-            if "--choise=" in arg:
-                choise = arg.replace("--choise=", "")
+            if "--folder=" in arg:
+                folder = arg.replace("--folder=", "")
 
         # Launch the principal part of the code
         if dburl is not None and \
            dbtoken is not None and \
            dbtable is not None:
             produttore_e_consumatore2(
-                debug, csv, choise, True, dburl, dbtoken, dbtable)
+                debug, csv, folder, True, dburl, dbtoken, dbtable)
         else:
-            produttore_e_consumatore2(debug, csv, choise)
+            produttore_e_consumatore2(debug, csv, folder)
     else:
         gui = programGUI(title="produttore_e_consumatore2", instructions=[
             [
@@ -337,14 +323,9 @@ def laucher():
                     "id": "csv"
                 },
                 {
-                    "type": "list",
-                    "title": "Choose your opinion",
-                    "id": "choise",
-                    "options": [
-                            "singular",
-                            "linear",
-                            "circular"
-                    ]
+                    "type": "text",
+                    "title": "Folder to scan",
+                    "id": "folder"
                 }
             ],
             [
@@ -371,7 +352,7 @@ def laucher():
             produttore_e_consumatore2(
                 gui.get_values()["verbose"],
                 gui.get_values()["csv"],
-                gui.get_values()["choise"],
+                gui.get_values()["folder"],
                 True,
                 gui.get_values()["url"],
                 gui.get_values()["token"],
@@ -381,7 +362,7 @@ def laucher():
             produttore_e_consumatore2(
                 gui.get_values()["verbose"],
                 gui.get_values()["csv"],
-                gui.get_values()["choise"]
+                gui.get_values()["folder"]
             )
 
 

@@ -1,8 +1,9 @@
 # produttore_e_consumatore2
-[![GitHub license](https://img.shields.io/badge/license-Apache%202.0%20License-green?style=flat)](https://github.com/CastellaniDavide/cpp-produttore_e_consumatore2/blob/master/LICENSE) ![Author](https://img.shields.io/badge/author-Castellani%20Davide-green?style=flat) ![Version](https://img.shields.io/badge/version-v01.01-blue?style=flat) ![Language Python](https://img.shields.io/badge/language-Python-yellowgreen?style=flat) ![sys.platform supported](https://img.shields.io/badge/OS%20platform%20supported-All-blue?style=flat) [![On GitHub](https://img.shields.io/badge/on%20GitHub-True-green?style=flat&logo=github)](https://github.com/CastellaniDavide/produttore_e_consumatore2) 
+[![GitHub license](https://img.shields.io/badge/license-Apache%202.0%20License-green?style=flat)](https://github.com/CastellaniDavide/cpp-produttore_e_consumatore2/blob/master/LICENSE) ![Author](https://img.shields.io/badge/author-Castellani%20Davide-green?style=flat) ![Version](https://img.shields.io/badge/version-v02.01-blue?style=flat) ![Language Python](https://img.shields.io/badge/language-Python-yellowgreen?style=flat) ![sys.platform supported](https://img.shields.io/badge/OS%20platform%20supported-All-blue?style=flat) [![On GitHub](https://img.shields.io/badge/on%20GitHub-True-green?style=flat&logo=github)](https://github.com/CastellaniDavide/produttore_e_consumatore2) 
 
 ## Description
-Producer and consumer with multiprocessing
+Producer and consumer with multiprocessing.
+You can use this tool to get the files which are in a selected folder/ subfolder.
 
 ## Required
 ![](http://jeffnielsen.com/wp-content/uploads/2014/06/required-cropped.png)
@@ -28,6 +29,16 @@ Producer and consumer with multiprocessing
     - ```choco remove produttore_e_consumatore2```
   - Ubuntu using apt:
     - ```sudo apt remove produttoreconsumatore2```
+
+## Usage
+ - with GUI
+   - ![](https://raw.githubusercontent.com/CastellaniDavide/produttore_e_consumatore2/docs/GUI.png) Follow the labels (only folder one is obbligatory).
+ - without GUI
+   - produttore_e_consumatore2 [--batch | -b] - disable GUI mode
+   - produttore_e_consumatore2 [--verbose] - verbose mode (if not in GUI mode)
+   - produttore_e_consumatore2 [--csv] - enable csv output (if not in GUI mode)
+   - produttore_e_consumatore2 [--folder] - enable csv output (if not in GUI mode)
+   - produttore_e_consumatore2 [--url=... --token=... --table=...] - enable the upload to HarperDB (Replace "..." with the value(s)) (if not in GUI mode)
 
 ## Directories structure
 ![](https://cdn.analyticsvidhya.com/wp-content/uploads/2019/05/data-science-framework.png)

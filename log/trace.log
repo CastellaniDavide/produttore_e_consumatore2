@@ -2598,3 +2598,342 @@ produttore_e_consumatore2,DAVIDECASTELLAN,1619618255,"By DB: {""message"":""inse
 produttore_e_consumatore2,DAVIDECASTELLAN,1619618255,"By DB: {""message"":""inserted 1 of 1 records"",""inserted_hashes"":[""c83f2810-a350-4569-95fd-a4616d6cd9d8""],""skipped_hashes"":[]}",31664,19876,1619618296.103887,Wed Apr 28 15:58:16 2021
 produttore_e_consumatore2,DAVIDECASTELLAN,1619618255,Finished processes,21892,31152,1619618296.293561,Wed Apr 28 15:58:16 2021
 produttore_e_consumatore2,DAVIDECASTELLAN,1619618255,End,21892,31152,1619618296.294543,Wed Apr 28 15:58:16 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1619766596,Headers inizialized,1856,9348,1619766596.430302,Fri Apr 30 09:09:56 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1619766596,Defined CSV files' infos,1856,9348,1619766596.441275,Fri Apr 30 09:09:56 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1619766596,Inizialized CSV files,1856,9348,1619766596.451367,Fri Apr 30 09:09:56 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1619766596,Created log,1856,9348,1619766596.421801,Fri Apr 30 09:09:56 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1619766596,Setuped processes,1856,9348,1619766596.728271,Fri Apr 30 09:09:56 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1619766596,Started processes,1856,9348,1619766596.787322,Fri Apr 30 09:09:56 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1619766596,"productor: {index: 0, value: singular}",16688,12420,1619766598.363507,Fri Apr 30 09:09:58 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1619766596,"consumer: {index: 0, value: singular}",10280,9504,1619766599.653397,Fri Apr 30 09:09:59 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1619766596,Finished processes,1856,9348,1619766600.6761,Fri Apr 30 09:10:00 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1619766596,End,1856,9348,1619766600.680089,Fri Apr 30 09:10:00 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621002932,Created log,26060,17800,1621002932.928704,Fri May 14 16:35:32 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621002932,Headers inizialized,26060,17800,1621002932.930699,Fri May 14 16:35:32 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621002932,Defined CSV files' infos,26060,17800,1621002932.930699,Fri May 14 16:35:32 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621002932,Inizialized CSV files,26060,17800,1621002932.991539,Fri May 14 16:35:32 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003013,Created log,23692,11148,1621003013.082271,Fri May 14 16:36:53 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003013,Headers inizialized,23692,11148,1621003013.082271,Fri May 14 16:36:53 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003013,Defined CSV files' infos,23692,11148,1621003013.084266,Fri May 14 16:36:53 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003013,Inizialized CSV files,23692,11148,1621003013.08626,Fri May 14 16:36:53 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003086,Created log,16316,22664,1621003086.241596,Fri May 14 16:38:06 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003086,Headers inizialized,16316,22664,1621003086.242549,Fri May 14 16:38:06 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003086,Defined CSV files' infos,16316,22664,1621003086.244549,Fri May 14 16:38:06 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003086,Inizialized CSV files,16316,22664,1621003086.245542,Fri May 14 16:38:06 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003086,Setuped processes,16316,22664,1621003086.340736,Fri May 14 16:38:06 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003086,Started processes,16316,22664,1621003086.34174,Fri May 14 16:38:06 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003086,Finished processes,16316,22664,1621003087.48828,Fri May 14 16:38:07 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003086,End,16316,22664,1621003087.489515,Fri May 14 16:38:07 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003115,Created log,17232,12236,1621003115.456214,Fri May 14 16:38:35 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003115,Headers inizialized,17232,12236,1621003115.457252,Fri May 14 16:38:35 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003115,Setuped processes,17232,12236,1621003115.459205,Fri May 14 16:38:35 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003115,Started processes,17232,12236,1621003115.460202,Fri May 14 16:38:35 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003115,Finished processes,17232,12236,1621003116.620352,Fri May 14 16:38:36 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003115,End,17232,12236,1621003116.621353,Fri May 14 16:38:36 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003128,Created log,16640,22640,1621003128.135492,Fri May 14 16:38:48 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003128,Headers inizialized,16640,22640,1621003128.136607,Fri May 14 16:38:48 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003128,Setuped processes,16640,22640,1621003128.139601,Fri May 14 16:38:48 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003128,Started processes,16640,22640,1621003128.193863,Fri May 14 16:38:48 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003128,Finished processes,16640,22640,1621003129.486454,Fri May 14 16:38:49 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003128,End,16640,22640,1621003129.487236,Fri May 14 16:38:49 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003148,Created log,15084,16824,1621003148.364583,Fri May 14 16:39:08 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003148,Headers inizialized,15084,16824,1621003148.365624,Fri May 14 16:39:08 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003148,Setuped processes,15084,16824,1621003148.368571,Fri May 14 16:39:08 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003148,Started processes,15084,16824,1621003148.418389,Fri May 14 16:39:08 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003148,Finished processes,15084,16824,1621003149.580935,Fri May 14 16:39:09 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003148,End,15084,16824,1621003149.581739,Fri May 14 16:39:09 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003412,Created log,17224,13044,1621003412.390445,Fri May 14 16:43:32 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003412,Headers inizialized,17224,13044,1621003412.392219,Fri May 14 16:43:32 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003412,Setuped processes,17224,13044,1621003412.812214,Fri May 14 16:43:32 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003412,Started processes,17224,13044,1621003412.914509,Fri May 14 16:43:32 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003412,Finished processes,17224,13044,1621003414.060742,Fri May 14 16:43:34 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003412,End,17224,13044,1621003414.063733,Fri May 14 16:43:34 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003463,Created log,11012,24344,1621003463.754048,Fri May 14 16:44:23 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003463,Headers inizialized,11012,24344,1621003463.755045,Fri May 14 16:44:23 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003463,Setuped processes,11012,24344,1621003464.204963,Fri May 14 16:44:24 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003463,Started processes,11012,24344,1621003464.313971,Fri May 14 16:44:24 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003463,Finished processes,11012,24344,1621003465.656065,Fri May 14 16:44:25 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003463,End,11012,24344,1621003465.680999,Fri May 14 16:44:25 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003519,Created log,9048,20948,1621003519.580077,Fri May 14 16:45:19 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003519,Headers inizialized,9048,20948,1621003519.581074,Fri May 14 16:45:19 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003519,Setuped processes,9048,20948,1621003520.00686,Fri May 14 16:45:20 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003519,Started processes,9048,20948,1621003520.118314,Fri May 14 16:45:20 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003519,Finished processes,9048,20948,1621003521.400295,Fri May 14 16:45:21 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003519,End,9048,20948,1621003521.400295,Fri May 14 16:45:21 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003572,Created log,26676,27416,1621003572.773912,Fri May 14 16:46:12 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003572,Headers inizialized,26676,27416,1621003572.774909,Fri May 14 16:46:12 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003572,Setuped processes,26676,27416,1621003573.206627,Fri May 14 16:46:13 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003572,Started processes,26676,27416,1621003573.300428,Fri May 14 16:46:13 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003572,Finished processes,26676,27416,1621003574.537025,Fri May 14 16:46:14 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003572,End,26676,27416,1621003574.541015,Fri May 14 16:46:14 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003613,Created log,17188,8468,1621003613.378195,Fri May 14 16:46:53 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003613,Headers inizialized,17188,8468,1621003613.379192,Fri May 14 16:46:53 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003613,Setuped processes,17188,8468,1621003613.81341,Fri May 14 16:46:53 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003613,Started processes,17188,8468,1621003613.928038,Fri May 14 16:46:53 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003613,Finished processes,17188,8468,1621003615.190923,Fri May 14 16:46:55 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003613,End,17188,8468,1621003615.190923,Fri May 14 16:46:55 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003635,Created log,15896,17808,1621003635.920351,Fri May 14 16:47:15 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003635,Headers inizialized,15896,17808,1621003635.920863,Fri May 14 16:47:15 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003635,Setuped processes,15896,17808,1621003636.351657,Fri May 14 16:47:16 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003635,Started processes,15896,17808,1621003636.453946,Fri May 14 16:47:16 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003635,Finished processes,15896,17808,1621003637.68031,Fri May 14 16:47:17 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003635,End,15896,17808,1621003637.680946,Fri May 14 16:47:17 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003665,Created log,30156,25372,1621003665.558571,Fri May 14 16:47:45 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003665,Headers inizialized,30156,25372,1621003665.559569,Fri May 14 16:47:45 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003665,Setuped processes,30156,25372,1621003666.014841,Fri May 14 16:47:46 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003665,Started processes,30156,25372,1621003666.125644,Fri May 14 16:47:46 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003665,Finished processes,30156,25372,1621003667.461047,Fri May 14 16:47:47 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003665,End,30156,25372,1621003667.462033,Fri May 14 16:47:47 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003705,Created log,12816,12004,1621003705.211549,Fri May 14 16:48:25 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003705,Headers inizialized,12816,12004,1621003705.212547,Fri May 14 16:48:25 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003705,Setuped processes,12816,12004,1621003705.730246,Fri May 14 16:48:25 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003705,Started processes,12816,12004,1621003705.86851,Fri May 14 16:48:25 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003705,"productor: {index: 0, value: .\multiprocessing.csv}",28852,26264,1621003706.51525,Fri May 14 16:48:26 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003705,"consumer: {index: 0, value: .\multiprocessing.csv}",18912,16608,1621003706.530409,Fri May 14 16:48:26 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003705,"productor: {index: 0, value: .\trace.log}",29176,7204,1621003706.577282,Fri May 14 16:48:26 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003705,"consumer: {index: 0, value: .\trace.log}",27372,17040,1621003706.623779,Fri May 14 16:48:26 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003705,Finished processes,12816,12004,1621003707.14251,Fri May 14 16:48:27 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003705,End,12816,12004,1621003707.14251,Fri May 14 16:48:27 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003744,Created log,26256,28168,1621003744.722956,Fri May 14 16:49:04 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003744,Headers inizialized,26256,28168,1621003744.723954,Fri May 14 16:49:04 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003744,Setuped processes,26256,28168,1621003745.169284,Fri May 14 16:49:05 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003744,Started processes,26256,28168,1621003745.274097,Fri May 14 16:49:05 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003744,"productor: {index: 0, value: .\multiprocessing.csv}",27900,4420,1621003745.895589,Fri May 14 16:49:05 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003744,"consumer: {index: 0, value: .\multiprocessing.csv}",25660,16492,1621003745.977212,Fri May 14 16:49:05 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003744,Finished processes,26256,28168,1621003746.527742,Fri May 14 16:49:06 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003744,End,26256,28168,1621003746.542701,Fri May 14 16:49:06 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003796,Created log,28704,16564,1621003796.346737,Fri May 14 16:49:56 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003796,Headers inizialized,28704,16564,1621003796.347735,Fri May 14 16:49:56 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003796,Setuped processes,28704,16564,1621003796.803352,Fri May 14 16:49:56 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003796,Started processes,28704,16564,1621003796.919001,Fri May 14 16:49:56 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003796,"productor: {index: 0, value: .\multiprocessing.csv}",21992,30144,1621003797.501245,Fri May 14 16:49:57 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003796,"consumer: {index: 0, value: .\multiprocessing.csv}",27916,18540,1621003797.574053,Fri May 14 16:49:57 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003796,"productor: {index: 0, value: .\__init__.py}",18772,12732,1621003797.601978,Fri May 14 16:49:57 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003796,"consumer: {index: 0, value: .\__init__.py}",27100,29000,1621003797.62691,Fri May 14 16:49:57 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003796,Finished processes,28704,16564,1621003798.154883,Fri May 14 16:49:58 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003796,End,28704,16564,1621003798.158873,Fri May 14 16:49:58 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003828,Created log,19140,15428,1621003828.272196,Fri May 14 16:50:28 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003828,Headers inizialized,19140,15428,1621003828.273192,Fri May 14 16:50:28 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003828,Setuped processes,19140,15428,1621003828.723668,Fri May 14 16:50:28 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003828,Started processes,19140,15428,1621003828.839435,Fri May 14 16:50:28 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003828,"productor: {index: 0, value: .\multiprocessing.csv}",12396,6400,1621003829.492682,Fri May 14 16:50:29 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003828,"consumer: {index: 0, value: .\multiprocessing.csv}",10108,3712,1621003829.563491,Fri May 14 16:50:29 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003828,"productor: {index: 0, value: .\__init__.py}",28464,9388,1621003829.591416,Fri May 14 16:50:29 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003828,"consumer: {index: 0, value: .\__init__.py}",16268,23524,1621003829.657894,Fri May 14 16:50:29 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003828,Finished processes,19140,15428,1621003830.083484,Fri May 14 16:50:30 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003828,End,19140,15428,1621003830.089468,Fri May 14 16:50:30 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003852,Created log,9132,28928,1621003852.877549,Fri May 14 16:50:52 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003852,Headers inizialized,9132,28928,1621003852.878546,Fri May 14 16:50:52 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003852,Setuped processes,9132,28928,1621003853.433401,Fri May 14 16:50:53 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003852,Started processes,9132,28928,1621003853.568829,Fri May 14 16:50:53 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003852,"productor: {index: 0, value: .\multiprocessing.csv}",17556,18792,1621003854.40315,Fri May 14 16:50:54 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003852,"consumer: {index: 0, value: .\multiprocessing.csv}",1952,28516,1621003854.445037,Fri May 14 16:50:54 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003852,"productor: {index: 0, value: .\trace.log}",20568,20348,1621003854.474031,Fri May 14 16:50:54 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003852,"consumer: {index: 0, value: .\trace.log}",19244,11844,1621003854.533057,Fri May 14 16:50:54 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003852,"productor: {index: 0, value: .\__init__.py}",26928,24320,1621003854.574053,Fri May 14 16:50:54 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003852,"consumer: {index: 0, value: .\__init__.py}",14408,17724,1621003854.734042,Fri May 14 16:50:54 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003852,Finished processes,9132,28928,1621003855.078998,Fri May 14 16:50:55 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003852,End,9132,28928,1621003855.122977,Fri May 14 16:50:55 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003894,Created log,31076,10508,1621003894.308965,Fri May 14 16:51:34 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003894,Headers inizialized,31076,10508,1621003894.309963,Fri May 14 16:51:34 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003894,Setuped processes,31076,10508,1621003894.757185,Fri May 14 16:51:34 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003894,Started processes,31076,10508,1621003894.878263,Fri May 14 16:51:34 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003894,"productor: {index: 0, value: .\multiprocessing.csv}",548,15984,1621003895.47175,Fri May 14 16:51:35 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003894,"consumer: {index: 0, value: .\multiprocessing.csv}",20648,19412,1621003895.633087,Fri May 14 16:51:35 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003894,Finished processes,31076,10508,1621003896.103377,Fri May 14 16:51:36 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003894,End,31076,10508,1621003896.145263,Fri May 14 16:51:36 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003923,Created log,28828,29060,1621003923.1154,Fri May 14 16:52:03 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003923,Headers inizialized,28828,29060,1621003923.116393,Fri May 14 16:52:03 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003923,Setuped processes,28828,29060,1621003923.57681,Fri May 14 16:52:03 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003923,Started processes,28828,29060,1621003923.694946,Fri May 14 16:52:03 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003923,"productor: {index: 0, value: .\multiprocessing.csv}",3400,22068,1621003924.436872,Fri May 14 16:52:04 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003923,"consumer: {index: 0, value: .\multiprocessing.csv}",14144,27708,1621003924.541508,Fri May 14 16:52:04 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003923,Finished processes,28828,29060,1621003925.001647,Fri May 14 16:52:05 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003923,End,28828,29060,1621003925.0196,Fri May 14 16:52:05 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003959,Created log,4272,12140,1621003959.048262,Fri May 14 16:52:39 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003959,Headers inizialized,4272,12140,1621003959.04926,Fri May 14 16:52:39 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003959,Setuped processes,4272,12140,1621003959.494942,Fri May 14 16:52:39 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003959,Started processes,4272,12140,1621003959.623373,Fri May 14 16:52:39 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003959,"productor: {index: 0, value: .\multiprocessing.csv}",28620,11484,1621003960.226284,Fri May 14 16:52:40 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003959,Finished processes,4272,12140,1621003960.879822,Fri May 14 16:52:40 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003959,End,4272,12140,1621003960.882813,Fri May 14 16:52:40 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003991,Created log,28420,23496,1621003991.811812,Fri May 14 16:53:11 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003991,Headers inizialized,28420,23496,1621003991.812809,Fri May 14 16:53:11 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003991,Setuped processes,28420,23496,1621003992.249164,Fri May 14 16:53:12 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003991,Started processes,28420,23496,1621003992.367317,Fri May 14 16:53:12 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003991,"productor: {index: 0, value: .\multiprocessing.csv}",9468,1736,1621003992.960862,Fri May 14 16:53:12 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003991,Finished processes,28420,23496,1621003993.616777,Fri May 14 16:53:13 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621003991,End,28420,23496,1621003993.617772,Fri May 14 16:53:13 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004021,Created log,11036,8556,1621004021.429306,Fri May 14 16:53:41 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004021,Headers inizialized,11036,8556,1621004021.430304,Fri May 14 16:53:41 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004021,Setuped processes,11036,8556,1621004021.890627,Fri May 14 16:53:41 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004021,Started processes,11036,8556,1621004022.003199,Fri May 14 16:53:42 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004021,"productor: {index: 0, value: .\multiprocessing.csv}",31440,26068,1621004022.63312,Fri May 14 16:53:42 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004021,"consumer: {index: 0, value: .\multiprocessing.csv}",8304,23272,1621004022.783117,Fri May 14 16:53:42 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004021,"productor: {index: 0, value: .\multiprocessing.csv}",11304,8640,1621004023.242831,Fri May 14 16:53:43 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004021,Finished processes,11036,8556,1621004023.252611,Fri May 14 16:53:43 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004021,End,11036,8556,1621004023.252611,Fri May 14 16:53:43 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004099,Created log,22576,4012,1621004099.117885,Fri May 14 16:54:59 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004099,Headers inizialized,22576,4012,1621004099.118882,Fri May 14 16:54:59 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004099,Setuped processes,22576,4012,1621004099.78041,Fri May 14 16:54:59 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004099,Started processes,22576,4012,1621004099.914632,Fri May 14 16:54:59 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004099,"productor: {index: 0, value: .\multiprocessing.csv}",19080,12028,1621004100.851669,Fri May 14 16:55:00 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004099,"consumer: {index: 0, value: .\multiprocessing.csv}",12080,26908,1621004100.993977,Fri May 14 16:55:00 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004099,"productor: {index: 0, value: .\__init__.py}",17184,23096,1621004101.041848,Fri May 14 16:55:01 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004099,"consumer: {index: 0, value: .\__init__.py}",22632,10268,1621004101.091713,Fri May 14 16:55:01 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004099,Finished processes,22576,4012,1621004101.407862,Fri May 14 16:55:01 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004099,End,22576,4012,1621004101.437782,Fri May 14 16:55:01 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004143,Created log,22504,15980,1621004143.809394,Fri May 14 16:55:43 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004143,Headers inizialized,22504,15980,1621004143.810391,Fri May 14 16:55:43 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004143,Setuped processes,22504,15980,1621004144.272132,Fri May 14 16:55:44 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004143,Started processes,22504,15980,1621004144.387061,Fri May 14 16:55:44 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004143,"productor: {index: 0, value: .\multiprocessing.csv}",26252,21612,1621004145.025133,Fri May 14 16:55:45 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004143,"consumer: {index: 0, value: .\multiprocessing.csv}",23896,28052,1621004145.091953,Fri May 14 16:55:45 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004143,"productor: {index: 0, value: .\__init__.py}",27392,23784,1621004145.122139,Fri May 14 16:55:45 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004143,"consumer: {index: 0, value: .\__init__.py}",21632,27004,1621004145.141087,Fri May 14 16:55:45 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004143,Finished processes,22504,15980,1621004145.654682,Fri May 14 16:55:45 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004143,End,22504,15980,1621004145.65568,Fri May 14 16:55:45 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004143,"productor: {index: 0, value: .\multiprocessing.csv}",18260,31476,1621004145.719509,Fri May 14 16:55:45 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004156,Created log,20532,8260,1621004156.97154,Fri May 14 16:55:56 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004156,Headers inizialized,20532,8260,1621004156.972537,Fri May 14 16:55:56 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004156,Setuped processes,20532,8260,1621004157.469508,Fri May 14 16:55:57 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004156,Started processes,20532,8260,1621004157.571786,Fri May 14 16:55:57 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004156,"productor: {index: 0, value: .\multiprocessing.csv}",2396,28416,1621004158.257158,Fri May 14 16:55:58 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004156,"consumer: {index: 0, value: .\multiprocessing.csv}",15716,27248,1621004158.334637,Fri May 14 16:55:58 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004156,Finished processes,20532,8260,1621004158.835204,Fri May 14 16:55:58 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004156,End,20532,8260,1621004158.836203,Fri May 14 16:55:58 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004190,Created log,24444,18568,1621004190.809232,Fri May 14 16:56:30 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004190,Headers inizialized,24444,18568,1621004190.810229,Fri May 14 16:56:30 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004190,Setuped processes,24444,18568,1621004192.031678,Fri May 14 16:56:32 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004190,Started processes,24444,18568,1621004192.147058,Fri May 14 16:56:32 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004190,"productor: {index: 0, value: .\multiprocessing.csv}",20620,27756,1621004192.774606,Fri May 14 16:56:32 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004190,"productor: {index: 1, value: .\trace.log}",29152,26636,1621004192.851387,Fri May 14 16:56:32 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004190,"consumer: {index: 0, value: .\multiprocessing.csv}",16880,29532,1621004192.86136,Fri May 14 16:56:32 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004190,"productor: {index: 2, value: .\__init__.py}",24572,31444,1621004192.881306,Fri May 14 16:56:32 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004190,"consumer: {index: 1, value: .\trace.log}",2392,21672,1621004192.904246,Fri May 14 16:56:32 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004190,"consumer: {index: 2, value: .\__init__.py}",22856,26428,1621004193.041049,Fri May 14 16:56:33 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004190,End,24444,18568,1621004193.372626,Fri May 14 16:56:33 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004190,Finished processes,24444,18568,1621004193.371628,Fri May 14 16:56:33 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004190,"productor: {index: 0, value: .\multiprocessing.csv}",23940,13712,1621004193.440489,Fri May 14 16:56:33 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004190,"productor: {index: 1, value: .\trace.log}",28112,13716,1621004193.484892,Fri May 14 16:56:33 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004227,Created log,7804,30568,1621004227.103402,Fri May 14 16:57:07 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004227,Headers inizialized,7804,30568,1621004227.106392,Fri May 14 16:57:07 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004227,Setuped processes,7804,30568,1621004229.25548,Fri May 14 16:57:09 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004227,Started processes,7804,30568,1621004229.456732,Fri May 14 16:57:09 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004227,"productor: {index: 0, value: .\multiprocessing.csv}",11028,19520,1621004230.40869,Fri May 14 16:57:10 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004227,"productor: {index: 1, value: .\trace.log}",10516,25888,1621004230.621118,Fri May 14 16:57:10 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004227,"consumer: {index: 0, value: .\multiprocessing.csv}",10056,1488,1621004230.578234,Fri May 14 16:57:10 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004227,"productor: {index: 2, value: .\__init__.py}",15728,22480,1621004230.665997,Fri May 14 16:57:10 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004227,"consumer: {index: 2, value: .\__init__.py}",12232,27128,1621004230.686941,Fri May 14 16:57:10 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004227,End,7804,30568,1621004230.693922,Fri May 14 16:57:10 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004227,Finished processes,7804,30568,1621004230.684946,Fri May 14 16:57:10 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004227,"consumer: {index: 1, value: .\trace.log}",31524,25220,1621004230.701901,Fri May 14 16:57:10 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004265,Created log,18464,28744,1621004265.753574,Fri May 14 16:57:45 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004265,Headers inizialized,18464,28744,1621004265.753574,Fri May 14 16:57:45 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004265,Setuped processes,18464,28744,1621004267.008989,Fri May 14 16:57:47 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004265,Started processes,18464,28744,1621004267.124333,Fri May 14 16:57:47 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004265,"productor: {index: 0, value: .\multiprocessing.csv}",8428,5300,1621004267.754476,Fri May 14 16:57:47 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004265,"productor: {index: 1, value: .\trace.log}",17080,6328,1621004267.834261,Fri May 14 16:57:47 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004265,"productor: {index: 2, value: .\__init__.py}",12936,10328,1621004267.862595,Fri May 14 16:57:47 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004265,"consumer: {index: 0, value: .\multiprocessing.csv}",14508,21672,1621004267.876553,Fri May 14 16:57:47 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004265,"consumer: {index: 1, value: .\trace.log}",16380,18732,1621004267.939384,Fri May 14 16:57:47 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004265,"consumer: {index: 2, value: .\__init__.py}",19000,11540,1621004267.957336,Fri May 14 16:57:47 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004265,Finished processes,18464,28744,1621004268.269714,Fri May 14 16:57:48 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004265,End,18464,28744,1621004268.270712,Fri May 14 16:57:48 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004381,Created log,10188,20368,1621004381.017998,Fri May 14 16:59:41 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004381,Headers inizialized,10188,20368,1621004381.019993,Fri May 14 16:59:41 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004395,Created log,21332,17312,1621004395.0752,Fri May 14 16:59:55 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004395,Headers inizialized,21332,17312,1621004395.0752,Fri May 14 16:59:55 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004405,Created log,26160,24664,1621004405.972817,Fri May 14 17:00:05 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004405,Headers inizialized,26160,24664,1621004405.973599,Fri May 14 17:00:05 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004405,Setuped processes,26160,24664,1621004407.094548,Fri May 14 17:00:07 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004405,Started processes,26160,24664,1621004407.209584,Fri May 14 17:00:07 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004405,"productor: {index: 0, value: .\multiprocessing.csv}",21536,16280,1621004407.781317,Fri May 14 17:00:07 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004405,"productor: {index: 1, value: .\trace.log}",23856,24536,1621004407.83582,Fri May 14 17:00:07 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004405,"productor: {index: 2, value: .\__init__.py}",17000,22104,1621004407.854708,Fri May 14 17:00:07 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004405,"consumer: {index: 2, value: .\__init__.py}",20340,14540,1621004407.874052,Fri May 14 17:00:07 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004405,"consumer: {index: 0, value: .\multiprocessing.csv}",9788,16460,1621004407.888875,Fri May 14 17:00:07 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004405,"consumer: {index: 1, value: .\trace.log}",26168,9820,1621004407.950256,Fri May 14 17:00:07 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004405,Finished processes,26160,24664,1621004408.400855,Fri May 14 17:00:08 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004405,End,26160,24664,1621004408.401816,Fri May 14 17:00:08 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004432,Created log,14344,30840,1621004432.154251,Fri May 14 17:00:32 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004432,Headers inizialized,14344,30840,1621004432.154251,Fri May 14 17:00:32 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004432,Setuped processes,14344,30840,1621004433.240991,Fri May 14 17:00:33 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004432,Started processes,14344,30840,1621004433.35576,Fri May 14 17:00:33 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004432,"productor: {index: 0, value: .\multiprocessing.csv}",29284,7816,1621004433.919268,Fri May 14 17:00:33 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004432,"productor: {index: 1, value: .\trace.log}",9956,10012,1621004433.951202,Fri May 14 17:00:33 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004432,"productor: {index: 2, value: .\__init__.py}",8524,21904,1621004434.000616,Fri May 14 17:00:34 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004432,"consumer: {index: 2, value: .\__init__.py}",23536,19812,1621004434.016573,Fri May 14 17:00:34 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004432,"consumer: {index: 0, value: .\multiprocessing.csv}",1056,27920,1621004434.047497,Fri May 14 17:00:34 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004432,"consumer: {index: 1, value: .\trace.log}",18332,29740,1621004434.063454,Fri May 14 17:00:34 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004432,Finished processes,14344,30840,1621004434.504868,Fri May 14 17:00:34 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004432,End,14344,30840,1621004434.504868,Fri May 14 17:00:34 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004455,Created log,22620,22020,1621004455.767172,Fri May 14 17:00:55 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004455,Headers inizialized,22620,22020,1621004455.770167,Fri May 14 17:00:55 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004455,Setuped processes,22620,22020,1621004456.873007,Fri May 14 17:00:56 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004455,Started processes,22620,22020,1621004456.976705,Fri May 14 17:00:56 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004455,"productor: {index: 0, value: .\..\src\multiprocessing.csv}",8512,20112,1621004457.544162,Fri May 14 17:00:57 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004455,"consumer: {index: 0, value: .\..\src\multiprocessing.csv}",6484,16552,1621004457.554137,Fri May 14 17:00:57 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004455,"productor: {index: 1, value: .\..\src\trace.log}",24140,16664,1621004457.566103,Fri May 14 17:00:57 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004455,"productor: {index: 2, value: .\..\src\__init__.py}",25932,30092,1621004457.608246,Fri May 14 17:00:57 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004455,"consumer: {index: 1, value: .\..\src\trace.log}",21776,31604,1621004457.659302,Fri May 14 17:00:57 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004455,"consumer: {index: 2, value: .\..\src\__init__.py}",4560,21924,1621004457.70583,Fri May 14 17:00:57 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004455,Finished processes,22620,22020,1621004458.127127,Fri May 14 17:00:58 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004455,End,22620,22020,1621004458.128062,Fri May 14 17:00:58 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004491,Created log,19984,8972,1621004491.006356,Fri May 14 17:01:31 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004491,Headers inizialized,19984,8972,1621004491.007355,Fri May 14 17:01:31 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004491,Setuped processes,19984,8972,1621004492.099843,Fri May 14 17:01:32 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004491,Started processes,19984,8972,1621004492.21255,Fri May 14 17:01:32 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004491,"productor: {index: 0, value: .\..\src\multiprocessing.csv}",24688,14532,1621004492.777013,Fri May 14 17:01:32 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004491,"consumer: {index: 0, value: .\..\src\multiprocessing.csv}",22676,25392,1621004492.839307,Fri May 14 17:01:32 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004491,Finished processes,19984,8972,1621004493.373057,Fri May 14 17:01:33 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004491,End,19984,8972,1621004493.374058,Fri May 14 17:01:33 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004491,"productor: {index: 0, value: .\..\src\__init__.py}",23432,25820,1621004493.413477,Fri May 14 17:01:33 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004491,"consumer: {index: 0, value: .\..\src\__init__.py}",16324,20464,1621004493.4996,Fri May 14 17:01:33 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004527,Created log,13680,8704,1621004527.273474,Fri May 14 17:02:07 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004527,Headers inizialized,13680,8704,1621004527.274471,Fri May 14 17:02:07 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004579,Created log,16884,23728,1621004579.563405,Fri May 14 17:02:59 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004579,Headers inizialized,16884,23728,1621004579.563405,Fri May 14 17:02:59 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004579,Setuped processes,16884,23728,1621004580.757956,Fri May 14 17:03:00 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004579,Started processes,16884,23728,1621004580.866404,Fri May 14 17:03:00 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004579,"productor: {index: 0, value: .\..\src\multiprocessing.csv}",28708,22632,1621004581.461228,Fri May 14 17:03:01 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004579,"productor: {index: 1, value: .\..\src\trace.log}",29000,4592,1621004581.550268,Fri May 14 17:03:01 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004579,"productor: {index: 2, value: .\..\src\__init__.py}",23836,27912,1621004581.556252,Fri May 14 17:03:01 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004579,"consumer: {index: 0, value: .\..\src\multiprocessing.csv}",17280,19156,1621004581.568227,Fri May 14 17:03:01 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004579,"consumer: {index: 2, value: .\..\src\__init__.py}",31332,5816,1621004581.645904,Fri May 14 17:03:01 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004579,"consumer: {index: 1, value: .\..\src\trace.log}",23556,28744,1621004582.021601,Fri May 14 17:03:02 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004579,Finished processes,16884,23728,1621004582.004681,Fri May 14 17:03:02 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004579,End,16884,23728,1621004582.005635,Fri May 14 17:03:02 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004592,Created log,17968,20020,1621004592.88357,Fri May 14 17:03:12 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004592,Headers inizialized,17968,20020,1621004592.885607,Fri May 14 17:03:12 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004718,Created log,26448,6096,1621004718.869688,Fri May 14 17:05:18 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004718,Headers inizialized,26448,6096,1621004718.871697,Fri May 14 17:05:18 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004718,Defined CSV files' infos,26448,6096,1621004718.872681,Fri May 14 17:05:18 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004718,Inizialized CSV files,26448,6096,1621004718.943563,Fri May 14 17:05:18 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004718,Setuped processes,26448,6096,1621004720.020116,Fri May 14 17:05:20 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004718,Started processes,26448,6096,1621004720.11697,Fri May 14 17:05:20 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004718,"productor: {index: 0, value: .\..\src\multiprocessing.csv}",828,14604,1621004720.635029,Fri May 14 17:05:20 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004718,"productor: {index: 1, value: .\..\src\trace.log}",22276,14132,1621004720.689882,Fri May 14 17:05:20 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004718,"productor: {index: 2, value: .\..\src\__init__.py}",12008,21412,1621004720.720715,Fri May 14 17:05:20 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004718,"consumer: {index: 1, value: .\..\src\trace.log}",27080,19832,1621004720.746726,Fri May 14 17:05:20 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004718,"consumer: {index: 0, value: .\..\src\multiprocessing.csv}",25680,5080,1621004720.762105,Fri May 14 17:05:20 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004718,"consumer: {index: 2, value: .\..\src\__init__.py}",17916,11708,1621004720.853695,Fri May 14 17:05:20 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004718,Finished processes,26448,6096,1621004721.259787,Fri May 14 17:05:21 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004718,End,26448,6096,1621004721.274774,Fri May 14 17:05:21 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004762,Created log,15124,24216,1621004762.873893,Fri May 14 17:06:02 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004762,Headers inizialized,15124,24216,1621004762.87552,Fri May 14 17:06:02 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004762,Defined CSV files' infos,15124,24216,1621004762.876513,Fri May 14 17:06:02 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004762,Inizialized CSV files,15124,24216,1621004762.947468,Fri May 14 17:06:02 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004762,Setuped processes,15124,24216,1621004764.380265,Fri May 14 17:06:04 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004762,Started processes,15124,24216,1621004764.527398,Fri May 14 17:06:04 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004762,"productor: {index: 0, value: .\..\src\dir.txt}",29060,29092,1621004765.153023,Fri May 14 17:06:05 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004762,"productor: {index: 1, value: .\..\src\multiprocessing.csv}",24484,9956,1621004765.248764,Fri May 14 17:06:05 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004762,"productor: {index: 2, value: .\..\src\trace.log}",31496,20588,1621004765.27082,Fri May 14 17:06:05 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004762,"consumer: {index: 1, value: .\..\src\multiprocessing.csv}",10176,24780,1621004765.279796,Fri May 14 17:06:05 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004762,"consumer: {index: 0, value: .\..\src\dir.txt}",23084,2252,1621004765.285832,Fri May 14 17:06:05 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004762,"productor: {index: 3, value: .\..\src\__init__.py}",10544,29140,1621004765.313757,Fri May 14 17:06:05 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004762,"consumer: {index: 2, value: .\..\src\trace.log}",18064,17948,1621004765.349661,Fri May 14 17:06:05 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004762,"consumer: {index: 3, value: .\..\src\__init__.py}",31308,19104,1621004765.401127,Fri May 14 17:06:05 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004762,Finished processes,15124,24216,1621004765.6952,Fri May 14 17:06:05 2021
+produttore_e_consumatore2,DAVIDECASTELLAN,1621004762,End,15124,24216,1621004765.696154,Fri May 14 17:06:05 2021
+

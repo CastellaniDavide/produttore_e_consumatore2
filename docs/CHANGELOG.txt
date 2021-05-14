@@ -1,6 +1,10 @@
 # Changelog
 Multiprocessing
 
+## [02.01] - 2021-05-15
+### Added
+- Folder scanner
+
 ## [01.01] - 2021-04-28
 ### Added
 - Initial version

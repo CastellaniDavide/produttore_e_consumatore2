@@ -1,0 +1,4 @@
+{index: 0, value: .\..\src\dir.txt}
+{index: 1, value: .\..\src\multiprocessing.csv}
+{index: 2, value: .\..\src\trace.log}
+{index: 3, value: .\..\src\__init__.py}
