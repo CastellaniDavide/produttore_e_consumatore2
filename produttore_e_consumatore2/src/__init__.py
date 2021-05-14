@@ -147,20 +147,22 @@ class produttore_e_consumatore2:
         """Core of all project
         """
         processes = []
-         
+        
+        i = 0
         for path, subdirs, files in os.walk(self.folder):
             for name in files:
                 processes.append(
                     Process(
                         target=self.produttore,
                         args=(
-                            self.pLeft.value,
+                            i,
                             os.path.join(path, name))))
-                processes.append(Process(target=self.consumatore, args=(self.pLeft.value,)))
-                self.pLeft.value += 1
+                processes.append(Process(target=self.consumatore, args=(i,)))
+            i += 1
+            self.pLeft.value += len(files)
 
         # set list
-        self.list_len = self.pLeft.value
+        self.list_len = i
         self.locks = [Lock()] * self.list_len
         self.values = []
         self.pLeft.value *= 2
